@@ -97,12 +97,20 @@ public class Main {
 
         //endless loop
         while (!Thread.currentThread().isInterrupted()) {
+            glfwPollEvents();
+
             try {
                 Thread.sleep(20);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
+
+        //close window, set window should close flag to true
+        glfwSetWindowShouldClose(windowID, true);
+
+        //destroy window, release window and window callbacks
+        glfwDestroyWindow(windowID);
 
         //shutdown GLFW
         GLFWUtils.shutdownGLFW();
