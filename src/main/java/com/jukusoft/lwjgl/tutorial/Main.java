@@ -55,7 +55,7 @@ public class Main {
         String title = "My window title";
 
         //create an new GLFW window and save id of window, so we can change window settings later
-        long windowID = glfwCreateWindow(width, width, title, monitor, NULL);
+        long windowID = glfwCreateWindow(width, height, title, monitor, NULL);
 
         //check, if error occours while creating window
         if (windowID == NULL) {
