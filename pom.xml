@@ -95,7 +95,7 @@
         </dependency>
     </dependencies>
 
-    <!-- see https://github.com/lwjglgamedev/lwjglbook/blob/master/pom.xml -->
+    <!-- profiles to support all platforms -->
     <profiles>
         <!-- profiles for windows -->
         <profile>
